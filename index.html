@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" manifest="Manifest.appcache">
+    <head>
+        <meta charset="utf-8" >
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <p>Задайте диапазон чисел от <input id="from" value="1"> до <input id="to" value="200000">.</p>
+        <button id="searchButton" onclick="doSearch()">Запустить поиск</button>
+        <button id="stopButton" onClick="cancelSearch()">Остановить поток</button>
+
+       <div id="primeContainer">
+       </div>
+
+       <div id="status"></div>
+        <div id="coords"></div>
+        
+        <script src="PrimeWorkers.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
